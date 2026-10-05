@@ -20,7 +20,7 @@ export function Seaside() {
         <div className="places-heading">
           <div>
             <BlurText as="p" className="eyebrow section-kicker">Mare e spiagge</BlurText>
-            <BlurText as="h2" id="seaside-title" className="section-title">Una giornata al mare.<br /><em>Al tuo ritmo.</em></BlurText>
+            <BlurText as="h2" id="seaside-title" className="section-title">A due passi<br /><em>dal mare</em></BlurText>
           </div>
           <BlurText as="p" className="section-description">Calette, scogliere e spiagge di sabbia: scegli il tuo modo di vivere il mare. Un tuffo nell’acqua limpida, una passeggiata sulla riva, poi il ritorno alla quiete di Trullo Natalino.</BlurText>
         </div>
