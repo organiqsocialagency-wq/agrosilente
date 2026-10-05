@@ -9,10 +9,11 @@ import "./AccordionGallery.css";
 
 type GalleryItem = { image: string; label: string; alt: string };
 
-export default function AccordionGallery({ items, defaultIndex = 2, expandRatio = 0.52 }: {
+export default function AccordionGallery({ items, defaultIndex = 2, expandRatio = 0.52, galleryName = "Locorotondo" }: {
   items: GalleryItem[];
   defaultIndex?: number;
   expandRatio?: number;
+  galleryName?: string;
 }) {
   const rootRef = useRef<HTMLDivElement>(null);
   const panelRefs = useRef<(HTMLButtonElement | null)[]>([]);
@@ -88,7 +89,7 @@ export default function AccordionGallery({ items, defaultIndex = 2, expandRatio 
 
   return (
     <div className="places-gallery">
-      <div ref={rootRef} className="accordion-gallery" role="group" aria-label="Fotografie di Locorotondo"
+      <div ref={rootRef} className="accordion-gallery" role="group" aria-label={`Fotografie di ${galleryName}`}
         onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)}
         onFocusCapture={() => setFocused(true)} onBlurCapture={(event) => { if (!event.currentTarget.contains(event.relatedTarget)) setFocused(false); }}>
         {items.map((item, index) => (
@@ -108,9 +109,9 @@ export default function AccordionGallery({ items, defaultIndex = 2, expandRatio 
       <div className="places-gallery-controls">
         <span className="eyebrow">0{active + 1} <span aria-hidden="true">/</span> 0{count}</span>
         <div className="carousel-controls">
-          <button type="button" aria-label="Foto precedente di Locorotondo" onClick={() => setActive((active - 1 + count) % count)}>←</button>
-          {!reduced && <button className="carousel-pause" type="button" onClick={() => setPaused(!paused)} aria-label={paused ? "Avvia scorrimento foto di Locorotondo" : "Pausa scorrimento foto di Locorotondo"}>{paused ? "Riprendi" : "Pausa"}</button>}
-          <button type="button" aria-label="Foto successiva di Locorotondo" onClick={() => setActive((active + 1) % count)}>→</button>
+          <button type="button" aria-label={`Foto precedente di ${galleryName}`} onClick={() => setActive((active - 1 + count) % count)}>←</button>
+          {!reduced && <button className="carousel-pause" type="button" onClick={() => setPaused(!paused)} aria-label={`${paused ? "Avvia" : "Pausa"} scorrimento foto di ${galleryName}`}>{paused ? "Riprendi" : "Pausa"}</button>}
+          <button type="button" aria-label={`Foto successiva di ${galleryName}`} onClick={() => setActive((active + 1) % count)}>→</button>
         </div>
       </div>
     </div>

@@ -8,6 +8,7 @@ import { Hero } from "./Hero";
 import { Navbar } from "./Navbar";
 import { Experiences } from "./Experiences";
 import { Events } from "./Events";
+import { Seaside } from "./Seaside";
 import { Booking } from "./Booking";
 import { Footer } from "./Footer";
 import { PhotoGallery } from "./PhotoGallery";
@@ -33,6 +34,7 @@ export function HomePage() {
           />
           <Dimora onExplore={openGallery} />
           <Experiences />
+          <Seaside />
           <Events />
           <GallerySection onExplore={openGallery} />
           <Booking />

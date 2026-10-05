@@ -1,0 +1,14 @@
+.seaside-section {
+  background: linear-gradient(180deg, #f7f0e6 0%, #e9eef0 100%);
+}
+.seaside-section .ag-panel__bar {
+  background: #ead9c6;
+}
+.seaside-note {
+  margin-top: 22px;
+  font-family: var(--font-display);
+  color: var(--color-muted);
+  font-size: clamp(16px, 1.5vw, 20px);
+  font-style: italic;
+  line-height: 1.6;
+}

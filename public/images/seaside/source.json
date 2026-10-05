@@ -1,0 +1,11 @@
+{
+  "source": "Immagini fornite dall’utente per la sezione mare e spiagge",
+  "processing": "Conversione WebP, contenuto e proporzioni originali conservati",
+  "files": [
+    "bay.webp",
+    "sea-cave.webp",
+    "dunes.webp",
+    "coast.webp",
+    "clear-water.webp"
+  ]
+}
