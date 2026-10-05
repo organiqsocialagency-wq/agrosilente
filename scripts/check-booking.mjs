@@ -9,7 +9,7 @@ import ts from "typescript";
 process.env.TZ = "Europe/Rome";
 const directory = mkdtempSync(join(tmpdir(), "agrosilente-booking-"));
 process.on("exit", () => rmSync(directory, { recursive: true, force: true }));
-for (const name of ["brand", "booking"]) {
+for (const name of ["assets", "brand", "booking"]) {
   const source = readFileSync(
     new URL(`../src/lib/${name}.ts`, import.meta.url),
     "utf8",
