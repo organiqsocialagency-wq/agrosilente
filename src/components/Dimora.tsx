@@ -4,7 +4,8 @@ import BlurText from "./react-bits/BlurText";
 
 import Image from "next/image";
 import { photographs } from "@/lib/brand";
-import { SunIcon, TrulliIcon } from "./icons";
+import { SunIcon } from "./icons";
+import { BrandMark } from "./BrandLogo";
 import { Reveal, ScrollStatement } from "./Motion";
 
 export function Dimora({ onExplore }: { onExplore: (index: number) => void }) {
@@ -19,11 +20,11 @@ export function Dimora({ onExplore }: { onExplore: (index: number) => void }) {
           <BlurText as="p" className="eyebrow section-kicker">
             01 / Un altro ritmo
           </BlurText>
-          <ScrollStatement text="Meno rumore. Più luce, più spazio. Più tempo per le cose che ami." />
+          <ScrollStatement text="Una casa lontano dalla città. Più vicina alle cose che ami." />
           <BlurText as="p" className="section-description">
-            La pietra dei trulli, la quiete del giardino, una porta da aprire
-            sulla Valle d’Itria. Ad Agrosilente, sentirsi altrove è un modo per
-            ritrovarsi.
+            La pietra del trullo, la luce del tramonto, una porta da aprire
+            sulla Valle d’Itria. A Trullo Natalino, tutta la casa è per te:
+            per condividere la vacanza, per ritrovare il tuo ritmo.
           </BlurText>
         </div>
         <div className="dimora-grid">
@@ -31,13 +32,13 @@ export function Dimora({ onExplore }: { onExplore: (index: number) => void }) {
             <button
               className="photo-tile group"
               type="button"
-              onClick={() => onExplore(2)}
-              aria-label="Apri la fotografia della dimora all’ora blu"
+              onClick={() => onExplore(0)}
+              aria-label="Apri la fotografia dell’esterno della dimora"
               aria-haspopup="dialog"
             >
               <Image
-                src={photographs[2].src}
-                alt={photographs[2].alt}
+                src={photographs[0].src}
+                alt={photographs[0].alt}
                 fill
                 sizes="(max-width:767px) 90vw, 50vw"
                 className="object-cover transition-transform duration-1000 group-hover:scale-105"
@@ -54,25 +55,24 @@ export function Dimora({ onExplore }: { onExplore: (index: number) => void }) {
             </button>
           </Reveal>
           <Reveal className="dimora-number" delay={0.1}>
-            <TrulliIcon className="w-16 h-12" />
+            <BrandMark className="dimora-brand-mark" />
             <div>
-              <span className="dimora-seven">7</span>
-              <BlurText as="h3">Dimore. Un’unica anima.</BlurText>
+              <BlurText as="h3">Una casa.<br /><em>Tutta per te.</em></BlurText>
             </div>
             <BlurText as="p">
-              Pietra a vista, dettagli essenziali e sette modi diversi di
-              sentirsi a casa.
+              La camera, il soggiorno, la cucina con il camino in pietra.
+              Fuori, il patio per le giornate da vivere con calma.
             </BlurText>
-            <a href="#suite" className="text-link">
-              Trova la tua
-            </a>
+            <button type="button" onClick={() => onExplore(3)} className="text-link" aria-haspopup="dialog">
+              Entra in casa
+            </button>
           </Reveal>
           <Reveal className="dimora-detail" delay={0.15}>
             <button
               type="button"
               onClick={() => onExplore(5)}
               className="photo-tile group"
-              aria-label="Apri il dettaglio delle maioliche"
+              aria-label="Apri la fotografia della cucina e del camino in pietra"
               aria-haspopup="dialog"
             >
               <Image
@@ -100,8 +100,8 @@ export function Dimora({ onExplore }: { onExplore: (index: number) => void }) {
                 <em>con semplicità.</em>
               </BlurText>
               <BlurText as="p">
-                Wi-Fi, aria condizionata e parcheggio. Le comodità che lasciano
-                spazio alla vacanza.
+                Cucina attrezzata, aria condizionata e spazi da condividere.
+                Le piccole comodità di sentirsi a casa.
               </BlurText>
             </div>
           </Reveal>

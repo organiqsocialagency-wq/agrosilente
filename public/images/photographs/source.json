@@ -1,0 +1,16 @@
+{
+  "source": "Fotografie fornite dal proprietario il 2026-10-05",
+  "processing": "Conversione WebP per il sito, proporzioni originali conservate; ritocchi effettuati con image_gen dove indicato.",
+  "photos": [
+    { "file": "exterior-edited.webp", "original": "20240505_174929.jpg", "edit": "Rimozione cavi e piante leggermente più rigogliose" },
+    { "file": "lemons.webp", "original": "1000299155-01-picsay.jpeg" },
+    { "file": "trullo-sunset.webp", "original": "20240504_190454.jpg" },
+    { "file": "living-samsung.webp", "original": "20240429_124957.jpg", "edit": "Sostituzione del televisore CRT con un Samsung LCD nero di generazione precedente" },
+    { "file": "bedroom.webp", "original": "20240506_174142.jpg" },
+    { "file": "kitchen.webp", "original": "1000297823-01.jpeg" },
+    { "file": "bedroom-reverse.webp", "original": "20240506_174613.jpg" },
+    { "file": "bathroom.webp", "original": "20240429_130140.jpg" },
+    { "file": "bathroom-shower.webp", "original": "20240429_130118.jpg" },
+    { "file": "wardrobe-samsung.webp", "original": "20240429_125356.jpg", "edit": "Aggiornamento coerente della TV visibile dalla porta del soggiorno" }
+  ]
+}

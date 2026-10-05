@@ -52,7 +52,7 @@ export function PhotoGallery({ initialIndex, onClose }: PhotoGalleryProps) {
     >
       <div className="mb-5 flex items-center justify-between gap-4">
         <h2 id="gallery-title" className="font-display text-3xl sm:text-4xl">
-          Dentro Agrosilente
+          Dentro Trullo Natalino
         </h2>
         <button
           type="button"
@@ -76,7 +76,7 @@ export function PhotoGallery({ initialIndex, onClose }: PhotoGalleryProps) {
         visibleCards={4}
         falloff={0.14}
         blur={3}
-        tint="#293c35"
+        tint="#493323"
         duration={850}
       />
     </dialog>

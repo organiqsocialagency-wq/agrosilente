@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
-import "@fontsource-variable/manrope";
-import "@fontsource/cormorant-garamond/400.css";
-import "@fontsource/cormorant-garamond/400-italic.css";
+import "@fontsource-variable/montserrat";
+import "@fontsource-variable/lora";
+import "@fontsource-variable/lora/wght-italic.css";
+import { assetPath } from "@/lib/assets";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Agrosilente — Dimore in Puglia",
+  icons: { icon: assetPath("/brand/trullo-natalino-mark.svg") },
+  title: "Trullo Natalino — Una casa in Puglia",
   description:
-    "Natura, pietra e silenzio. Scopri Agrosilente, una dimora tra i trulli a Locorotondo, nel cuore della Valle d’Itria.",
+    "Una casa tutta per te a Locorotondo. Pietra, tramonti e campagna a Trullo Natalino, in Contrada Pentimone, nel cuore della Valle d’Itria.",
 };
 
 export default function RootLayout({

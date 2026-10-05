@@ -100,7 +100,7 @@ export function Intro({ contentRef, onComplete }: IntroProps) {
     <div className="brand-intro" data-phase={phase}>
       <div className="intro-center">
         <BrandLogo animated />
-        <p className="intro-welcome">Il tuo tempo, da qui.</p>
+        <p className="intro-welcome">Qui il tempo è più gentile.</p>
       </div>
       <div className="intro-foot">
         <span>Locorotondo · Valle d’Itria</span>
@@ -112,7 +112,7 @@ export function Intro({ contentRef, onComplete }: IntroProps) {
         </span>
       </div>
       <span className="sr-only" role="status">
-        Benvenuti ad Agrosilente. Prepariamo la tua visita.
+        Benvenuti a Trullo Natalino. Prepariamo la tua visita.
       </span>
       <div className="intro-track" aria-hidden="true">
         <span style={{ transform: `scaleX(${progress / 100})` }} />

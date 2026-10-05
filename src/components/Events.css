@@ -1,0 +1,21 @@
+.events-section { background:var(--color-stone); overflow:hidden; }
+.events-heading { display:flex; align-items:flex-end; justify-content:space-between; gap:30px; margin-bottom:42px; }
+.events-heading .section-title { font-size:clamp(34px,4vw,60px); }
+.events-heading .section-title em { font-size:1em; }
+.events-pause { display:flex; align-items:center; gap:10px; border:1px solid #49332340; border-radius:30px; padding:12px 18px; min-height:44px; font-size:11px; flex-shrink:0; }
+.events-pause span { font-size:14px; }
+.events-viewport { overflow:hidden; scrollbar-width:none; padding:8px 0; }
+.events-viewport::-webkit-scrollbar { display:none; }
+.events-viewport:focus-visible { outline-offset:-3px; }
+.events-track { display:flex; width:max-content; animation:events-marquee 42s linear infinite; will-change:transform; }
+.events-track[data-paused="true"], .events-viewport:hover .events-track, .events-viewport:focus-within .events-track { animation-play-state:paused; }
+.events-group { display:flex; gap:24px; padding-right:24px; }
+.event-card { position:relative; margin:0; width:clamp(310px,34vw,490px); aspect-ratio:3/2; flex-shrink:0; overflow:hidden; border-radius:16px; background:#fff; }
+.event-card img { object-fit:cover; }
+.event-card--logo-dark { background:#000; }
+.event-card--logo-light { background:#fffaf2; }
+.event-card--logo-dark img,.event-card--logo-light img { object-fit:contain; padding:30px; }
+.event-card figcaption { position:absolute; inset:40% 0 0; display:flex; align-items:flex-end; padding:28px; background:linear-gradient(transparent,#190d09c9); color:#fffaf2; font-family:var(--font-display); font-size:clamp(23px,2.1vw,31px); line-height:1.15; }
+@keyframes events-marquee { to { transform:translateX(-50%); } }
+@media(max-width:600px) { .events-heading { align-items:flex-start; gap:16px; margin-bottom:26px; } .events-heading .section-title { font-size:32px; } .events-pause { padding:10px 12px; margin-top:36px; } .event-card { width:82vw; } .events-group { gap:16px; padding-right:16px; } .event-card figcaption { padding:22px; } }
+@media(prefers-reduced-motion:reduce) { .events-viewport { overflow-x:auto; } .events-track { animation:none; transform:none; will-change:auto; } .events-group[aria-hidden="true"] { display:none; } .events-pause { display:none; } }

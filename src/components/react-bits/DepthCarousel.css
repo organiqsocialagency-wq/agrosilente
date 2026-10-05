@@ -145,7 +145,7 @@
 
 .depth-carousel {
   isolation: isolate;
-  color: #293c35;
+  color: #493323;
   min-height: 420px;
   overflow: clip;
 }
@@ -153,27 +153,27 @@
   bottom: 100px;
 }
 .depth-carousel__card {
-  background: #d4c7b2;
+  background: #ead9c6;
   box-shadow:
-    0 24px 50px -24px #293c3566,
-    0 8px 20px -10px #293c3544;
+    0 24px 50px -24px #49332366,
+    0 8px 20px -10px #49332344;
 }
 .depth-carousel__img {
-  object-fit: contain;
+  object-fit: cover;
 }
 .depth-carousel__arrow {
   top: auto;
   bottom: 18px;
   transform: none;
-  background: #f1eee7;
-  color: #293c35;
-  border-color: #293c3533;
+  background: #f7f0e6;
+  color: #493323;
+  border-color: #49332333;
   width: 44px;
   height: 44px;
 }
 .depth-carousel__arrow:hover {
-  background: #d4c7b2;
-  border-color: #293c3555;
+  background: #ead9c6;
+  border-color: #49332355;
 }
 .depth-carousel__arrow:active {
   transform: scale(0.94);
@@ -206,7 +206,7 @@
   width: 6px;
   height: 6px;
   border-radius: 99px;
-  background: #293c3544;
+  background: #49332344;
   transition: background 0.3s;
 }
 .depth-carousel__dot.is-active {
@@ -214,7 +214,7 @@
   background: transparent;
 }
 .depth-carousel__dot.is-active::after {
-  background: #286696;
+  background: #a55837;
 }
 .depth-carousel__caption {
   position: absolute;
@@ -230,7 +230,7 @@
   letter-spacing: 0.18em;
 }
 .depth-carousel__caption p {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Lora Variable", serif;
   font-size: 23px;
   margin-top: 5px;
 }
@@ -242,11 +242,11 @@
   text-underline-offset: 4px;
 }
 .depth-carousel:focus-visible {
-  outline: 2px solid #286696;
+  outline: 2px solid #a55837;
   outline-offset: -4px;
 }
 .gallery-section {
-  background: #e8e2d6;
+  background: #eee0cd;
   padding-bottom: 70px;
 }
 .gallery-heading {

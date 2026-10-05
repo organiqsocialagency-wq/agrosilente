@@ -20,6 +20,7 @@ export interface DepthItem {
   image: string;
   alt?: string;
   caption?: string;
+  position?: string;
 }
 export interface DepthCarouselProps {
   items: readonly (string | DepthItem)[];
@@ -493,7 +494,7 @@ const DepthCarousel = ({
       style={{ "--dc-perspective": `${perspective}px` } as CSSProperties}
       role="group"
       aria-roledescription="carousel"
-      aria-label="Fotografie di Agrosilente"
+      aria-label="Fotografie di Trullo Natalino"
       tabIndex={0}
       onPointerDown={onPointerDown}
       onPointerMove={onPointerMove}
@@ -525,6 +526,7 @@ const DepthCarousel = ({
               height={1080}
               sizes="(max-width: 767px) 80vw, 520px"
               className="depth-carousel__img"
+              style={{ objectPosition: item.position ?? "50% 50%" }}
               src={item.image}
               alt={item.alt || ""}
               draggable={false}

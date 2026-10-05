@@ -84,7 +84,7 @@
   z-index: 2;
 }
 
-/* Preserve native anchors/forms and the Agrosilente button layout. */
+/* Preserve native anchors/forms and the Trullo Natalino button layout. */
 .specular-wrap {
   position: relative;
   display: inline-grid;
@@ -101,7 +101,7 @@
   line-height: 1.5;
   box-shadow:
     inset 0 1px 0 #ffffff25,
-    0 8px 24px #293c3512;
+    0 8px 24px #49332312;
   transition:
     background-color 0.5s,
     transform 0.3s;
@@ -119,7 +119,7 @@
   color: white;
 }
 .specular-button:focus-visible {
-  outline: 2px solid #286696;
+  outline: 2px solid #a55837;
   outline-offset: 5px;
 }
 .specular-button__fx {

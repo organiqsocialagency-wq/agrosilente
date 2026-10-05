@@ -6,8 +6,8 @@ import { Intro } from "./Intro";
 import { Dimora } from "./Dimora";
 import { Hero } from "./Hero";
 import { Navbar } from "./Navbar";
-import { Suites } from "./Suites";
 import { Experiences } from "./Experiences";
+import { Events } from "./Events";
 import { Booking } from "./Booking";
 import { Footer } from "./Footer";
 import { PhotoGallery } from "./PhotoGallery";
@@ -32,8 +32,8 @@ export function HomePage() {
             onExplore={openGallery}
           />
           <Dimora onExplore={openGallery} />
-          <Suites />
           <Experiences />
+          <Events />
           <GallerySection onExplore={openGallery} />
           <Booking />
         </main>

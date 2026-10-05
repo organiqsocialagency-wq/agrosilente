@@ -21,18 +21,18 @@
   min-height: 0;
   padding: 0;
   border-radius: 999px;
-  border: 1px solid #293c3517;
-  background: #e4e5dc;
-  color: #293c35;
+  border: 1px solid #49332317;
+  background: #eee5d8;
+  color: #493323;
   cursor: pointer;
 }
 .dock-booking .dock-control {
-  background: #286696;
-  color: #f1eee7;
-  border-color: #286696;
+  background: #a55837;
+  color: #f7f0e6;
+  border-color: #a55837;
 }
 .dock-control:focus-visible {
-  outline: 2px solid #286696;
+  outline: 2px solid #a55837;
   outline-offset: 4px;
 }
 .dock-text {
@@ -53,7 +53,7 @@
   .dock-panel {
     flex: 1;
     display: grid;
-    grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 4px;
     width: auto;
     min-width: 0;
