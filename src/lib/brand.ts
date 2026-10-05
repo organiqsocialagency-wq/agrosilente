@@ -11,8 +11,9 @@ export const brand = {
     address: "Contrada Pentimone",
     city: "70010 Locorotondo BA",
   },
-  locationHref: "https://www.google.com/maps/search/?api=1&query=Contrada%20Pentimone%2C%2070010%20Locorotondo%20BA",
-  mapEmbed: "https://www.google.com/maps?q=Contrada%20Pentimone%2C%2070010%20Locorotondo%20BA&output=embed",
+  // 40°45'42.1"N 17°20'27.1"E, posizione indicata dal proprietario.
+  locationHref: "https://www.google.com/maps/search/?api=1&query=40.761694%2C17.340861",
+  mapEmbed: "https://www.google.com/maps?q=40.761694%2C17.340861&z=16&output=embed",
 } as const;
 
 export const photographs = [
