@@ -23,8 +23,8 @@ export function Hero({
       aria-labelledby="hero-title"
     >
       <ScrollExpand
-        src={photographs[0].src}
-        alt={photographs[0].alt}
+        src={photographs[3].src}
+        alt={photographs[3].alt}
         title={
           <div className="hero-expand-title">
             <BlurText animationEnabled={ready} scrollLinked={false} as="p">
@@ -36,18 +36,16 @@ export function Hero({
               as="h1"
               id="hero-title"
             >
-              TRULLO NATALINO
+              AGROSILENTE
             </BlurText>
-            <span>UNA CASA, TUTTA PER TE</span>
-            <p className="hero-motto">Qui il tempo è più gentile.</p>
+            <span>DIMORE IN PUGLIA</span>
           </div>
         }
         scrollHint="Scorri, entra nella quiete ↓"
         startWidth={68}
-        startHeight={74}
+        startHeight={64}
         startRadius={26}
-        mediaZoom={1}
-        fitMediaToFrame
+        mediaZoom={1.08}
         scrollDistance={0.85}
         holdDistance={0.15}
         overlayScrim={0.85}
@@ -56,7 +54,7 @@ export function Hero({
         footer={
           <div className="hero-expand-actions">
             <SpecularButton href={bookingHref} className="primary-cta">
-              Prenota il tuo soggiorno{" "}
+              Prenota Ora{" "}
               <span className="cta-icon">
                 <ArrowIcon className="size-5" />
               </span>
@@ -73,22 +71,22 @@ export function Hero({
         }
       >
         <BlurText as="h2" className="hero-expand-slogan">
-          Pietra, tramonti.
+          Calma.
           <br />
-          <em>E tempo per te.</em>
+          <em>Con carattere.</em>
         </BlurText>
         <BlurText as="p" className="hero-expand-description">
-          Una casa nella campagna di Locorotondo.
+          Sette dimore tra i trulli di Locorotondo.
           <br />
           La Puglia da abitare, il tempo da ritrovare.
         </BlurText>
       </ScrollExpand>
       <div className="page-shell hero-facts">
-        <span>Una casa, tutta per te</span>
-        <span>Pietra, natura e silenzio</span>
+        <span>Sette suite, ognuna diversa</span>
+        <span>Trulli e cummersa</span>
         <span>Nel cuore della Valle d’Itria</span>
-        <a href="#essenza" className="text-link">
-          Scopri il trullo
+        <a href="#suite" className="text-link">
+          Scegli la tua suite
         </a>
       </div>
     </section>

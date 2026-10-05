@@ -10,7 +10,6 @@ export const galleryItems = photographs.map((photo) => ({
   image: photo.src,
   alt: photo.alt,
   caption: photo.caption,
-  position: ["50% 53%", "50% 46%", "50% 34%", "50% 36%", "50% 54%", "50% 50%", "50% 48%", "50% 58%", "50% 64%", "50% 45%"][photographs.indexOf(photo)],
 }));
 
 export function GallerySection({
@@ -27,13 +26,13 @@ export function GallerySection({
       <div className="page-shell">
         <div className="gallery-heading">
           <BlurText as="p" className="eyebrow section-kicker">
-            03 / Dieci sguardi, una casa
+            Dieci sguardi, una dimora
           </BlurText>
           <BlurText as="div">
             <MaskedHeading
               id="photo-story-title"
               className="font-display"
-              text="Dentro Trullo Natalino."
+              text="Dentro Agrosilente."
               src={photographs[2].src}
               brightness={0.65}
               saturation={0.8}
@@ -60,7 +59,7 @@ export function GallerySection({
             visibleCards={4}
             falloff={0.14}
             blur={3}
-            tint="#493323"
+            tint="#293c35"
             duration={850}
             onOpen={onExplore}
             showCaption={false}

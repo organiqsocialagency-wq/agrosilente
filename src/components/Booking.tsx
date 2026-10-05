@@ -1,8 +1,8 @@
 "use client";
 
-import BlurText from "./react-bits/BlurText";
 import Image from "next/image";
 import { assetPath } from "@/lib/assets";
+import BlurText from "./react-bits/BlurText";
 
 import { useRef, useState, useSyncExternalStore, type FormEvent } from "react";
 import { motion, useReducedMotion } from "framer-motion";
@@ -99,8 +99,8 @@ export function Booking() {
             as="p"
             className="mx-auto mt-7 max-w-md text-sm leading-[1.9] text-muted"
           >
-            Scegli quando partire e con chi condividere la quiete.
-            Scrivici per prenotare la casa e organizzare il tuo soggiorno.
+            Scegli quando partire e con chi condividere la quiete. Chiedi a In
+            Puglia la disponibilità per il tuo soggiorno.
           </BlurText>
         </Reveal>
         <div className="booking-layout">
@@ -120,7 +120,7 @@ export function Booking() {
                   <MapPinIcon className="size-5" />
                 </span>
                 <div>
-                  <strong>Trullo Natalino · Una casa in Puglia</strong>
+                  <strong>Agrosilente · Dimore in Puglia</strong>
                   <br />
                   {brand.contact.address}
                   <br />
@@ -137,15 +137,24 @@ export function Booking() {
               </li>
             </ul>
             <div className="booking-map">
-              <a className="booking-map-preview" href={brand.locationHref} target="_blank" rel="noreferrer"
-                aria-label="Apri la posizione precisa di Trullo Natalino su Google Maps, nuova scheda">
-                <Image src={assetPath("/maps/trullo-natalino.svg")} width={880} height={560}
-                  alt="Mappa di Contrada Pentimone con un segnaposto a forma di trullo sulla posizione di Trullo Natalino" />
-                <span className="booking-map-label" aria-hidden="true">Come arrivare ↗</span>
+              <a
+                href={brand.locationHref}
+                target="_blank"
+                rel="noreferrer"
+                className="booking-map-preview"
+                aria-label="Apri la posizione di Agrosilente su Google Maps, nuova scheda"
+              >
+                <Image
+                  src={assetPath("/images/agrosilente/map-preview.png")}
+                  alt="Mappa con il segnaposto di Agrosilente vicino a Contrada Pozzotinto, Locorotondo"
+                  width={1142}
+                  height={1202}
+                  sizes="(max-width:900px) 90vw, 580px"
+                />
+                <span className="booking-map-label">Apri in Google Maps</span>
               </a>
-              <a className="booking-map-credit" href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">© OpenStreetMap contributors</a>
               <div className="booking-map-meta">
-                <strong>Trullo Natalino · Una casa in Puglia</strong>
+                <strong>Agrosilente · Dimore in Puglia</strong>
                 <span>{brand.contact.address} · Locorotondo</span>
               </div>
               <a
@@ -157,8 +166,8 @@ export function Booking() {
                 Apri in Google Maps{" "}
               </a>
             </div>
-            <a className="booking-email" href={brand.contact.whatsapp} target="_blank" rel="noreferrer">
-              Preferisci scriverci? <span>Ci trovi su WhatsApp</span>
+            <a className="booking-email" href={`mailto:${brand.contact.email}`}>
+              Preferisci scriverci? <span>{brand.contact.email}</span>
             </a>
           </div>
           <div className="booking-panel">
@@ -169,7 +178,7 @@ export function Booking() {
             <BlurText as="p" className="booking-panel-intro">
               Scegli le date e chi porterai con te.
               <br />
-              La casa ti aspetta, tutta per te.
+              Ti aiutiamo a trovare la dimora giusta.
             </BlurText>
             <form
               onSubmit={submit}
@@ -335,10 +344,13 @@ export function Booking() {
             )}
             <div className="booking-alternative">
               <a
-                href={brand.contact.phoneHref}
+                href={brand.bookingUrl}
+                target="_blank"
+                rel="noreferrer"
                 className="inline-flex min-h-11 items-center gap-3 border-b border-action/40 text-action"
               >
-                Preferisci chiamarci? {brand.contact.phone}
+                Prenota online sul portale{" "}
+                <span className="sr-only">, si apre in una nuova scheda</span>
               </a>
             </div>
           </div>

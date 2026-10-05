@@ -64,7 +64,7 @@ export function stayMessage(stay: StayRequest): string {
       month: "long",
       year: "numeric",
     }) ?? value;
-  return `Buongiorno, vorrei informazioni sulla disponibilità di Trullo Natalino.\nArrivo: ${format(stay.arrival)}\nPartenza: ${format(stay.departure)}\nAdulti: ${stay.adults}\nBambini: ${stay.children}${stay.children ? " (età da comunicare)" : ""}\nGrazie!`;
+  return `Buongiorno, vorrei informazioni sulla disponibilità di Agrosilente.\nArrivo: ${format(stay.arrival)}\nPartenza: ${format(stay.departure)}\nAdulti: ${stay.adults}\nBambini: ${stay.children}${stay.children ? " (età da comunicare)" : ""}\nGrazie!`;
 }
 
 export function whatsappHref(stay: StayRequest): string {

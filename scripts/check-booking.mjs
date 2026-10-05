@@ -7,7 +7,7 @@ import { test } from "node:test";
 import ts from "typescript";
 
 process.env.TZ = "Europe/Rome";
-const directory = mkdtempSync(join(tmpdir(), "trullo-natalino-booking-"));
+const directory = mkdtempSync(join(tmpdir(), "agrosilente-booking-"));
 process.on("exit", () => rmSync(directory, { recursive: true, force: true }));
 for (const name of ["assets", "brand", "booking"]) {
   const source = readFileSync(
@@ -98,9 +98,9 @@ test("validates guest counts without assuming room capacity", () => {
 test("encodes dates and party size for the verified WhatsApp recipient", () => {
   const url = new URL(whatsappHref({ ...valid, adults: 3, children: 2 }));
   assert.equal(url.origin, "https://wa.me");
-  assert.equal(url.pathname, "/393313021588");
+  assert.equal(url.pathname, "/393282957789");
   const message = url.searchParams.get("text");
-  assert.match(message, /Trullo Natalino/);
+  assert.match(message, /Agrosilente/);
   assert.match(message, /Arrivo: 24 ottobre 2026/);
   assert.match(message, /Partenza: 26 ottobre 2026/);
   assert.match(message, /Adulti: 3\nBambini: 2 \(età da comunicare\)/);

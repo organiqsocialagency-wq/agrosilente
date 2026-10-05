@@ -35,7 +35,6 @@ interface ScrollExpandProps extends Omit<
   startRadius?: number;
   endRadius?: number;
   mediaZoom?: number;
-  fitMediaToFrame?: boolean;
   scrollDistance?: number;
   holdDistance?: number;
   smoothing?: number;
@@ -59,7 +58,6 @@ const ScrollExpand = ({
   startRadius = 24,
   endRadius = 0,
   mediaZoom = 1.35,
-  fitMediaToFrame = false,
   scrollDistance = 1.2,
   holdDistance = 0.35,
   smoothing = 0.1,
@@ -88,7 +86,6 @@ const ScrollExpand = ({
     startRadius,
     endRadius,
     mediaZoom,
-    fitMediaToFrame,
     scrollDistance,
     holdDistance,
     smoothing,
@@ -103,7 +100,6 @@ const ScrollExpand = ({
       startRadius,
       endRadius,
       mediaZoom,
-      fitMediaToFrame,
       scrollDistance,
       holdDistance,
       smoothing,
@@ -117,7 +113,6 @@ const ScrollExpand = ({
     startRadius,
     endRadius,
     mediaZoom,
-    fitMediaToFrame,
     scrollDistance,
     holdDistance,
     smoothing,
@@ -142,14 +137,6 @@ const ScrollExpand = ({
     const iy = Math.max(0, (100 - h) / 2);
     const r = c.startRadius + (c.endRadius - c.startRadius) * e;
     frame.style.clipPath = `inset(${iy}% ${ix}% ${iy}% ${ix}% round ${r}px)`;
-
-    // Keep the subject framed inside the visible opening while it expands.
-    if (c.fitMediaToFrame) {
-      media.style.width = `${w}%`;
-      media.style.height = `${h}%`;
-      media.style.left = `${ix}%`;
-      media.style.top = `${iy}%`;
-    }
 
     media.style.transform = `scale(${c.mediaZoom + (1 - c.mediaZoom) * e})`;
 

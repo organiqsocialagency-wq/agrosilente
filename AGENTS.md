@@ -1,9 +1,13 @@
-<!-- BEGIN:nextjs-agent-rules -->
+# Identità e pubblicazione
 
-# This is NOT the Next.js you know
+Questa cartella contiene esclusivamente **Agrosilente**.
+Repository: `https://github.com/organiqsocialagency-wq/agrosilente`.
+Sito: `https://organiqsocialagency-wq.github.io/agrosilente/`.
 
-This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` (resolved from this file's directory; in monorepos the `next` package may not be visible from the repo root) before writing any code. Heed deprecation notices.
+Trullo Natalino è un progetto separato in `/Users/riccardoromanazzo/Documents/Trullo Natalino`, con repository `organiqsocialagency-wq/trullo-natalino`. Non sostituire qui marchio, foto, contatti o contenuti con quelli di altre strutture. Le richieste riguardanti un'altra struttura vanno eseguite nella sua cartella e nel suo repository, verificando `git remote -v` prima di pubblicare.
 
-This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
+Prima della pubblicazione eseguire il controllo `scripts/check-site-identity.mjs`, la build e lo stesso controllo con `--export`. Verificare titolo, fotografie e contatti sul sito pubblico dopo il deploy.
 
-<!-- END:nextjs-agent-rules -->
+# Next.js
+
+Prima di modificare il codice, leggere la documentazione pertinente in `node_modules/next/dist/docs/` per la versione installata.

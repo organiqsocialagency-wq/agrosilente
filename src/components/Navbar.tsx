@@ -10,8 +10,9 @@ export function Navbar({
   bookingHref?: string;
 }) {
   const items: DockItemData[] = [
-    { label: "La casa", mobileLabel: "Casa", href: "#essenza" },
-    { label: "Locorotondo", mobileLabel: "Dintorni", href: "#esperienze" },
+    { label: "Dimora", href: "#essenza" },
+    { label: "Suite", href: "#suite" },
+    { label: "Esperienze", mobileLabel: "Vivi", href: "#esperienze" },
     { label: "Foto", onClick: () => onExplore() },
     {
       label: "Prenota Ora",
@@ -24,7 +25,7 @@ export function Navbar({
     <header className="dock-header">
       <a
         href="#dimora"
-        aria-label="Trullo Natalino, inizio pagina"
+        aria-label="Agrosilente, inizio pagina"
         className="header-brand"
       >
         <BrandLogo />

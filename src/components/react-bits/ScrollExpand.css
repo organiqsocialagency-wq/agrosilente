@@ -120,26 +120,26 @@
   clip-path: inset(18% 16% round 26px);
 }
 .hero-expand .scroll-expand__media {
-  object-position: 50% 40%;
+  object-position: 50% 30%;
 }
 .hero-expand-title > p {
-  font-family: "Montserrat Variable", sans-serif;
+  font-family: "Manrope Variable", sans-serif;
   font-size: 11px;
   font-weight: 400;
   letter-spacing: 0.16em;
   margin-bottom: 24px;
 }
 .hero-expand-title h1 {
-  font-family: "Lora Variable", serif;
-  font-size: clamp(34px, 5.1vw, 84px);
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(38px, 7.7vw, 130px);
   font-weight: 400;
-  letter-spacing: 0.065em;
-  padding-left: 0.065em;
+  letter-spacing: 0.12em;
+  padding-left: 0.12em;
   line-height: 1.1;
 }
 .hero-expand-title > span {
   display: block;
-  font-family: "Montserrat Variable", sans-serif;
+  font-family: "Manrope Variable", sans-serif;
   font-size: 11px;
   font-weight: 400;
   letter-spacing: 0.48em;
@@ -148,11 +148,11 @@
 }
 .hero-expand .scroll-expand__title {
   padding: 0 20px;
-  text-shadow: 0 2px 24px #3e291eaa;
+  text-shadow: 0 2px 24px #17271faa;
 }
 .hero-expand .scroll-expand__overlay {
   padding-bottom: 140px;
-  color: #f7f0e6;
+  color: #f1eee7;
 }
 .hero-expand-slogan {
   font-size: clamp(58px, 7vw, 110px);
@@ -161,7 +161,7 @@
   font-weight: 400;
 }
 .hero-expand-slogan em {
-  font-family: "Lora Variable", serif;
+  font-family: "Cormorant Garamond", serif;
   font-size: 1.1em;
 }
 .hero-expand-description {
@@ -192,12 +192,12 @@
   min-height: 56px;
   padding: 8px 22px;
   border-radius: 99px;
-  background: #f7f0e6e8;
-  color: #493323;
+  background: #f1eee7e8;
+  color: #293c35;
   backdrop-filter: blur(8px);
 }
 .hero-expand .scroll-expand__hint {
-  color: #766556;
+  color: #626d64;
   font-size: 10px;
   letter-spacing: 0.08em;
   bottom: 21px;
@@ -210,8 +210,8 @@
     clip-path: inset(18% 7% round 26px);
   }
   .hero-expand-title h1 {
-    font-size: clamp(26px, 6.4vw, 46px);
-    letter-spacing: 0.035em;
+    font-size: 8vw;
+    letter-spacing: 0.1em;
   }
   .hero-expand-title > p {
     font-size: 9px;

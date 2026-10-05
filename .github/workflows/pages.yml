@@ -1,4 +1,4 @@
-name: Publish Trullo Natalino
+name: Publish Agrosilente
 
 on:
   push:
@@ -21,10 +21,12 @@ jobs:
         with:
           node-version: 22
           cache: npm
+      - run: node scripts/check-site-identity.mjs
       - run: npm ci
       - run: npm run lint
       - run: npm run test:booking
       - run: npm run build:pages
+      - run: node scripts/check-site-identity.mjs --export
       - uses: actions/upload-pages-artifact@v3
         with:
           path: .next-export
