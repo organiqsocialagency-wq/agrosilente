@@ -74,3 +74,7 @@ Adapted from the supplied React Bits AccordionGallery (GSAP) under the React Bit
 ## Locorotondo photography
 
 All five photographs are attributed individually in public/crediti-fotografici.html and public/images/locorotondo/source.json. Resizing, WebP conversion and display crops retain the respective CC BY-SA 3.0 or 4.0 license. Property and event images were supplied by the user.
+
+## Static location map
+
+The map in `public/maps/trullo-natalino.svg` is locally rendered from © OpenStreetMap contributors data, licensed under ODbL 1.0: https://www.openstreetmap.org/copyright. The geographic extract is included in `scripts/data/location-map.json` under the same ODbL license; regenerate the illustration with `node scripts/generate-location-map.mjs`. The custom trullo marker is placed at the coordinates supplied by the owner (40°45′42.1″N, 17°20′27.1″E). The illustration and trullo marker are local designs, not Google Maps screenshots.

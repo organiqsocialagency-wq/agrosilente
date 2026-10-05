@@ -1,6 +1,8 @@
 "use client";
 
 import BlurText from "./react-bits/BlurText";
+import Image from "next/image";
+import { assetPath } from "@/lib/assets";
 
 import { useRef, useState, useSyncExternalStore, type FormEvent } from "react";
 import { motion, useReducedMotion } from "framer-motion";
@@ -135,10 +137,13 @@ export function Booking() {
               </li>
             </ul>
             <div className="booking-map">
-              <div className="booking-map-preview">
-                <iframe src={brand.mapEmbed} title="Mappa di Contrada Pentimone, 70010 Locorotondo BA"
-                  loading="lazy" referrerPolicy="no-referrer-when-downgrade" allowFullScreen />
-              </div>
+              <a className="booking-map-preview" href={brand.locationHref} target="_blank" rel="noreferrer"
+                aria-label="Apri la posizione precisa di Trullo Natalino su Google Maps, nuova scheda">
+                <Image src={assetPath("/maps/trullo-natalino.svg")} width={880} height={560}
+                  alt="Mappa di Contrada Pentimone con un segnaposto a forma di trullo sulla posizione di Trullo Natalino" />
+                <span className="booking-map-label" aria-hidden="true">Come arrivare ↗</span>
+              </a>
+              <a className="booking-map-credit" href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">© OpenStreetMap contributors</a>
               <div className="booking-map-meta">
                 <strong>Trullo Natalino · Una casa in Puglia</strong>
                 <span>{brand.contact.address} · Locorotondo</span>

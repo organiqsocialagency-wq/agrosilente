@@ -23,8 +23,8 @@ export function Hero({
       aria-labelledby="hero-title"
     >
       <ScrollExpand
-        src={photographs[2].src}
-        alt={photographs[2].alt}
+        src={photographs[0].src}
+        alt={photographs[0].alt}
         title={
           <div className="hero-expand-title">
             <BlurText animationEnabled={ready} scrollLinked={false} as="p">
@@ -46,7 +46,8 @@ export function Hero({
         startWidth={68}
         startHeight={74}
         startRadius={26}
-        mediaZoom={1.08}
+        mediaZoom={1}
+        fitMediaToFrame
         scrollDistance={0.85}
         holdDistance={0.15}
         overlayScrim={0.85}

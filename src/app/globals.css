@@ -1214,9 +1214,9 @@
 .booking-map-preview img {
   display: block;
   width: 100%;
-  height: 340px;
-  object-fit: cover;
-  object-position: 50% 43%;
+  height: auto;
+  aspect-ratio: 11 / 7;
+  object-fit: contain;
   transition: transform 0.4s;
 }
 .booking-map-preview:hover img {
@@ -1247,6 +1247,14 @@
   padding: 16px 4px 4px;
   font-size: 12px;
   line-height: 1.6;
+}
+.booking-map-credit {
+  display: block;
+  width: fit-content;
+  margin: 7px 4px 0 auto;
+  font-size: 9px;
+  line-height: 1.5;
+  color: var(--color-muted);
 }
 .booking-map-meta strong {
   font-weight: 500;
@@ -1349,7 +1357,7 @@
     padding: 22px;
   }
   .booking-map-preview img {
-    height: 280px;
+    height: auto;
   }
 }
 
@@ -1376,7 +1384,7 @@ body { background-image: radial-gradient(ellipse at 85% 8%, #e7c99318, transpare
 .hero-expand-title h1 { font-family: var(--font-display); font-size: clamp(34px, 5.1vw, 84px); letter-spacing: .065em; padding-left: .065em; }
 .hero-expand-title > .hero-motto { font-family: var(--font-display); font-size: clamp(16px, 1.6vw, 24px); font-style: italic; letter-spacing: 0; margin: 27px 0 0; }
 .hero-expand .scroll-expand__frame::after { content: ""; position: absolute; inset: 0; background: linear-gradient(110deg, #4e2d222b, #bb6e4e22 50%, #e7c99324); pointer-events: none; }
-.hero-expand .scroll-expand__media { object-position: 50% 10%; }
+.hero-expand .scroll-expand__media { object-position: 50% 40%; }
 .hero-expand .scroll-expand__title { text-shadow: 0 2px 24px #3e291eaa; }
 .hero-expand-title > span { letter-spacing: .35em; }
 .hero-expand-actions .primary-cta { background: #a55837; }
@@ -1391,7 +1399,6 @@ body { background-image: radial-gradient(ellipse at 85% 8%, #e7c99318, transpare
 .footer-brand-mark { width: 48px; margin-bottom: 26px; }
 .footer-brand-mark .logo-fill { fill: #e7c993; }
 .footer-brand-mark .logo-outline { stroke: #e7c993; }
-.booking-map-preview iframe { display: block; width: 100%; height: 340px; border: 0; }
 @media (max-width: 767px) {
   .header-brand { width: 27%; padding: 7px 8px; border-radius: 14px; }
   .header-brand .brand-logo { display: flex; }

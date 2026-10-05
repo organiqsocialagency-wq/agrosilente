@@ -120,7 +120,7 @@
   clip-path: inset(18% 16% round 26px);
 }
 .hero-expand .scroll-expand__media {
-  object-position: 50% 10%;
+  object-position: 50% 40%;
 }
 .hero-expand-title > p {
   font-family: "Montserrat Variable", sans-serif;
